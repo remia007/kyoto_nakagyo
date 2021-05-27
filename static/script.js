@@ -10,6 +10,7 @@ let polygonLayer;
 $(function() {
     makeMap();
     init();
+    // polygonCenter();
 })
 
 function makeMap() {
@@ -83,7 +84,6 @@ function onEachFeature(feature, layer) {
 }
 // クリックイベント
 function whenClick(e) {
-    console.log(e.target)
     // ポリゴン色変更
     this.setStyle({
         'fillColor': document.getElementById('color-select').value
@@ -116,3 +116,18 @@ function whenMouseout(e) {
         'fillOpacity': 0.8
     });
 }
+
+// function polygonCenter() {
+//     var poly = new Vue ({
+//         el: "#polygon-center-btn",
+//         methods: {
+//             center_view: function(e){
+
+//                 let center_list = $.getJSON("/center", function(obj) {
+//                     // ポリゴンをリストに詰める
+//                     return obj
+//                 });
+//             }
+//         }
+//     });
+// }

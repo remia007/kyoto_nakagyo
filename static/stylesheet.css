@@ -28,6 +28,11 @@ h1 {
     grid-column: 2 / 3;
 }
 
+#widgets-center-polygon {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
 /* セレクトボックススタイル */
 .form-group label {
     color: snow;
@@ -51,10 +56,9 @@ h1 {
     border-color: #ca82f8;
 }
 
-/*
 .btn-push {
-    width: 140px;
-    height: 60px;
+    width: 160px;
+    height: 45px;
     font-family: inherit;
     appearance: none;
     border: 0;

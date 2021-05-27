@@ -14,5 +14,10 @@ def init():
     return jsonify({"data": result})
 
 
+# @define_db.app.route('/center')
+# def polygon_center():
+#     result = sql.polygon_center()
+#     return jsonify({"data": result})
+
 if __name__ == '__main__':
     define_db.app.run(debug=True)

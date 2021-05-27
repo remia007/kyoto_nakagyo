@@ -5,12 +5,16 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://cdn.rawgit.com/mapbox/wellknown/master/wellknown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     
 </head>
 <body>
     <div id="container">
+
         <h1>DEMO(Flask + Leaflet)</h1>
+
         <div id="leaflet-map"></div>
+
         <div id="widgets-color-select" class="form-group">
             <label for="color-select">color select: </label>
             <select id="color-select" class="form-control">
@@ -22,6 +26,11 @@
                 <option value="hotpink">pink</option>
             </select>
         </div>
+
+        <!-- <div id="widgets-center-polygon">
+            <button id="polygon-center-btn" class="btn-push" v-on:click="center_view">Polygon center</button>
+        </div> -->
+
     </div>
 
 
