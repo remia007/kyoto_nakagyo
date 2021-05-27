@@ -11,6 +11,19 @@
     <div id="container">
         <h1>DEMO(Flask + Leaflet)</h1>
         <div id="leaflet-map"></div>
+        <div id="widgets-color-select" class="form-group">
+            <label for="color-select">color select: </label>
+            <select id="color-select" class="form-control">
+                <option value="black">black</option>
+                <option value="blue">blue</option>
+                <option value="red">red</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+                <option value="hotpink">pink</option>
+            </select>
+        </div>
     </div>
+
+
     <script src="{{url_for('static', filename='script.js')}}"></script>
 </body>

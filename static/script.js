@@ -53,13 +53,13 @@ function init() {
                 ward: arr[3],
                 town: arr[4],
                 polygon: arr[5],
-                fillColor: "lightblue",
+                fillColor: "aliceblue",
                 // polygonのスタイル
                 color: "black",
                 fill: true,
                 opacity: 0.4,
                 weight: 1,
-                fillOpacity: 0.6,
+                fillOpacity: 0.8,
                 onEachFeature: onEachFeature
             });
         });
@@ -80,12 +80,25 @@ function onEachFeature(feature, layer) {
     });
 }
 // クリックイベント
-// 色を赤に変えるだけ
 function whenClick(e) {
+    console.log(e.target)
     // ポリゴン色変更
     this.setStyle({
-        'fillColor': 'red'
+        'fillColor': document.getElementById('color-select').value
     });
+
+    let latlng = [e.latlng.lat, e.latlng.lng];
+    let town = e.target.defaultOptions.town
+
+    L.popup().setLatLng(latlng)
+    .setContent(`
+    <p>
+    緯度経度: (${latlng})<br>
+    町名: ${town}
+    </p>
+
+    `)
+    .openOn(map);
 }
 // マウスオーバーイベント
 function whenMouseover(e) {
