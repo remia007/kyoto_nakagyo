@@ -32,7 +32,7 @@ pip install bs4
 
 Create DB:
 ```
-python data_creation
+python data_creation.py
 ```
 
 Start server:
