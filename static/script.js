@@ -1,3 +1,5 @@
+// ベースの位置
+BASE = [35.0090728300962, 135.7459909276804]
 // マップ
 let map
 // wkt形式のポリゴン
@@ -29,8 +31,8 @@ function makeMap() {
     };
 
     map = L.map('leaflet-map', {
-        center: [35.013184580687074, 135.76894844104126],
-        zoom: 15,
+        center: BASE,
+        zoom: 14,
         layers: [os_map]
     });
 
@@ -104,13 +106,13 @@ function whenClick(e) {
 function whenMouseover(e) {
     // 濃淡変更
     this.setStyle({
-        'fillOpacity': 0.8
+        'fillOpacity': 1
     });
 }
 // マウスアウトイベント
 function whenMouseout(e) {
     // 濃淡変更
     this.setStyle({
-        'fillOpacity': 0.5
+        'fillOpacity': 0.8
     });
 }
