@@ -1,6 +1,12 @@
 Flask and Leaflet(練習用)
 =================
 
+Clone:
+```
+git clone https://github.com/remia007/kyoto_nakagyo.git
+```
+
+
 Python Version:
 
 ```
