@@ -10,7 +10,6 @@ Python Version:
 Polygon data:
 ```
 https://uedayou.net/loa/京都府京都市
-
 ```
 
 Install dependencies:
