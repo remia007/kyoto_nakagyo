@@ -23,10 +23,10 @@ Install dependencies:
 ```
 pip install flask
 pip install flask_sqlalchemy
+pip install pandas
 
 // 以下はデータ作成用のため、アプリ起動には必要ない
 pip install requests
-pip install pandas
 pip install bs4
 ```
 
