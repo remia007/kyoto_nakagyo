@@ -103,6 +103,7 @@ function whenClick(e) {
     `)
     .openOn(map);
 }
+
 // マウスオーバーイベント
 function whenMouseover(e) {
     // 濃淡変更
@@ -110,6 +111,7 @@ function whenMouseover(e) {
         'fillOpacity': 1
     });
 }
+
 // マウスアウトイベント
 function whenMouseout(e) {
     // 濃淡変更
@@ -118,10 +120,10 @@ function whenMouseout(e) {
     });
 }
 
-var poly = new Vue ({
+var vm = new Vue ({
     el: "#initialize-btn",
     methods: {
-        initialize: function(e){
+        initialize: function(e) {
             map.removeLayer(polygonLayer);
             init();
         }

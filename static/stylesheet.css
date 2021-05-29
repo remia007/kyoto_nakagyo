@@ -63,8 +63,8 @@ h1 {
     appearance: none;
     border: 0;
     border-radius: 4px;
-    background: #4676d7;
-    color: #fff;
+    background: gold;
+    color: #24140e;;
     padding: 6px 18px;
     font-size: 14px;
     cursor: pointer;
@@ -73,7 +73,7 @@ h1 {
 }
 
 .btn-push:hover {
-    background: #1d49aa;
+    background: orange;
 }
 
 .btn-push:focus {
