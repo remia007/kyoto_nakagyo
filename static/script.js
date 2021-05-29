@@ -10,7 +10,6 @@ let polygonLayer;
 $(function() {
     makeMap();
     init();
-    // polygonCenter();
 })
 
 function makeMap() {
@@ -119,17 +118,12 @@ function whenMouseout(e) {
     });
 }
 
-// function polygonCenter() {
-//     var poly = new Vue ({
-//         el: "#polygon-center-btn",
-//         methods: {
-//             center_view: function(e){
-
-//                 let center_list = $.getJSON("/center", function(obj) {
-//                     // ポリゴンをリストに詰める
-//                     return obj
-//                 });
-//             }
-//         }
-//     });
-// }
+var poly = new Vue ({
+    el: "#initialize-btn",
+    methods: {
+        initialize: function(e){
+            map.removeLayer(polygonLayer);
+            init();
+        }
+    }
+});
