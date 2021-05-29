@@ -89,12 +89,14 @@ function whenClick(e) {
         'fillColor': document.getElementById('color-select').value
     });
 
+    let id = e.target.defaultOptions.id;
     let latlng = [e.latlng.lat, e.latlng.lng];
-    let town = e.target.defaultOptions.town
+    let town = e.target.defaultOptions.town;
 
     L.popup().setLatLng(latlng)
     .setContent(`
     <p>
+    ID: ${id}<br>
     緯度経度: (${latlng})<br>
     町名: ${town}
     </p>
